@@ -77,6 +77,16 @@ Lower CPU threshold for demos:
 python3 process_watcher.py --cpu-threshold 20
 ```
 
+## Tests
+
+Run the characterization tests locally with:
+
+```bash
+python3 -m pytest -q
+```
+
+The pull-request CI workflow runs the same pytest suite on Python 3.10 and 3.12, then executes two CLI smoke scans.
+
 ## Notes and limitations
 
 - This is not an EDR and will produce false positives.
